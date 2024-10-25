@@ -3,49 +3,127 @@
     margin: 0;
     box-sizing: border-box;
 }
-a{
+a {
     text-decoration: none;
 }
 ul, ol, li {
     list-style: none;
 }
-html, body{
+html, body {
     scroll-behavior: smooth;
+    overflow-x: hidden; /* Impede o scroll horizontal */
 }
 
-header{
+header {
     background-color: #333;
     padding: 16px;
     position: fixed;
     width: 100vw;
 }
-header nav ul{
+header nav ul {
     display: flex;
     justify-content: space-between;
 }
-header nav a{
-    color:white;
+header nav a {
+    color: white;
     padding: 8px;
 }
-header nav a:hover{
-    background-color: tomato;   
+header nav a:hover {
+    background-color: rgb(209, 209, 209);
     transition: 0.5s;
 }
 .grupo {
-   height: 100vh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
 }
-#vermelho{
-    background-color: red;
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    flex-direction: row-reverse; /* Inverte a ordem: texto à direita, imagem à esquerda */
 }
-#verde{
-    background-color: green;
+.texto {
+    max-width: 50%;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
 }
-#azul{
-    background-color: blue;
+
+.texto h1 {
+    font-size: 80px;
 }
-#amarelo{
-    background-color: yellow;
+
+.texto p {
+    font-size: 20px;
+    margin-bottom: 20px;
 }
-#roxo{
-    background-color: purple;
+
+.botaocompra {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+.botaocompra a {
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 25px;
+    transition: 0.3s;
+    
+}
+
+.comprar {
+    background-color: #00467F;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: box-shadow 0.3s; /* Transição suave para a sombra */
+}
+
+.detalhes {
+    color: #000000;
+}
+
+#AM95{
+    background-color: #ffffff;
+}
+
+#AM97 {
+    background-color: #fafafa;
+}
+
+#af1{
+    background-color: #fafafa;
+}
+
+#skepta{
+    background-color: #fafafa;
+}
+#TL {
+    background-color: #ffffff;
+}
+/* Cores personalizadas para cada modelo */
+#AM97 .comprar {
+    background-color: #ba2626; /* Prata para o Air Max 97 */
+}
+
+#TL .comprar {
+    background-color: #282828; /* Vermelho vibrante para o Shox TL */
+}
+
+#af1 .comprar {
+    background-color: #002D72; /* Branco clássico para o Air Force 1 */
+    color: #ffffff;
+}
+
+#Skepta .comprar {
+    background-color: #8B0000; /* Azul vibrante para o Skepta x Tailwind */
+}
+
+img {
+    max-width: 40%;
 }
