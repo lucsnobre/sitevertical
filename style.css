@@ -11,7 +11,7 @@ ul, ol, li {
 }
 html, body {
     scroll-behavior: smooth;
-    overflow-x: hidden; /* Impede o scroll horizontal */
+    overflow-x: hidden; 
 }
 
 header {
@@ -44,7 +44,7 @@ header nav a:hover {
     align-items: center;
     justify-content: space-between;
     width: 80%;
-    flex-direction: row-reverse; /* Inverte a ordem: texto à direita, imagem à esquerda */
+    flex-direction: row-reverse; 
 }
 .texto {
     max-width: 50%;
@@ -80,9 +80,75 @@ header nav a:hover {
 .comprar {
     background-color: #00467F;
     color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
-    transition: box-shadow 0.3s; /* Transição suave para a sombra */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: box-shadow 0.3s; 
 }
+
+
+.texto h1 {
+    font-size: 80px;
+    position: relative;
+    padding-bottom: 20px; 
+}
+
+
+#AM95 .texto h1::after {
+    content: "";
+    position: absolute;
+    bottom: 7px;
+    left: 0;
+    width: 70px;
+    height: 10px;
+    background-color: #0057A3; 
+    border-radius: 5px;
+}
+
+#AM97 .texto h1::after {
+    content: "";
+    position: absolute;
+    bottom: 7px;
+    left: 0;
+    width: 70px;
+    height: 10px;
+    background-color: #BA2626; /* Cor específica para o Air Max 97 */
+    border-radius: 5px;
+}
+
+#TL .texto h1::after {
+    content: "";
+    position: absolute;
+    bottom: 7px;
+    left: 0;
+    width: 70px;
+    height: 10px;
+    background-color: #282828; /* Cor específica para o Shox TL */
+    border-radius: 5px;
+}
+
+#af1 .texto h1::after {
+    content: "";
+    position: absolute;
+    bottom: 7px;
+    left: 0;
+    width: 70px;
+    height: 10px;
+    background-color: #A61C5C; 
+    border-radius: 5px;
+}
+
+#Skepta .texto h1::after {
+    content: "";
+    position: absolute;
+    bottom: 7px;
+    left: 0;
+    width: 70px;
+    height: 10px;
+    background-color: #8B0000; 
+    border-radius: 5px;
+}
+
+
+
 
 .detalhes {
     color: #000000;
@@ -106,22 +172,22 @@ header nav a:hover {
 #TL {
     background-color: #ffffff;
 }
-/* Cores personalizadas para cada modelo */
+
 #AM97 .comprar {
-    background-color: #ba2626; /* Prata para o Air Max 97 */
+    background-color: #ba2626; 
 }
 
 #TL .comprar {
-    background-color: #282828; /* Vermelho vibrante para o Shox TL */
+    background-color: #282828; 
 }
 
 #af1 .comprar {
-    background-color: #002D72; /* Branco clássico para o Air Force 1 */
+    background-color: #a61c5c; 
     color: #ffffff;
 }
 
 #Skepta .comprar {
-    background-color: #8B0000; /* Azul vibrante para o Skepta x Tailwind */
+    background-color: #8B0000; 
 }
 
 img {
